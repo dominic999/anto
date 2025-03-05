@@ -7,21 +7,31 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
    </head>
    <body>
-        <nav class = "h-16 w-full bg-yellow-50 flex gap-8 justify-center items-center">
-            <a href="" class="">Acasa</a>
-            <a href="" class="">Produse</a>
-            <img src="Logo.webp" class = "h-6/8 w-auto mx-12" alt="">
-            <a href="" class="">Despre</a>
-            <a href="" class="">Locatie</a>
+        <nav class = "bg-red-100 h-12 md:h-16 w-full bg-yellow-50 flex justify-between md:gap-8 md:justify-center items-center">
+            <a href="" class="hidden md:inline">Acasa</a>
+            <a href="" class="hidden md:inline">Produse</a>
+            <img src="Logo.webp" class = "h-6/8 w-auto mx-4" alt="">
+            <a href="" class="hidden md:inline">Despre</a>
+            <a href="" class="hidden md:inline">Locatie</a>
 
+            <div class = "md:hidden flex flex-col gap-2 h-6/8 w-16">
+                <div class = "w-16 h-1/2 flex flex-row gap-2 md:hidden">
+                    <div class = "bg-black w-1/2 h-1/2"></div>
+                    <div class="w-1/2 bg-black h-1/2"></div>
+                </div>
+                <div class = "w-16 h-1/2 flex gap-2 md:hidden"></div>
+                    <div class="w-1/2 bg-black h-1/2"></div>
+                    <div class="w-1/2 h-1/2 bg-black"></div>
+                </div>
+            </div>
         </nav>
-        <section class = "w-full gap-8 px-80 min-h-screen py-52 flex justify-around">
-            <div class = "w-1/2 h-160  flex flex-col justify-start gap-12 pt-12">
+        <section class = "md:w-full gap-8 px-80 min-h-screen py-52 flex justify-around">
+            <div class = "md:w-1/2 h-160  flex flex-col justify-start gap-12 pt-12">
                 <h2 class = "font-bold text-4xl">Locul Unde Cafeaua și <br> Pasiunea se Întâlnesc</h2>
                 <p>Descoperă magia unei cafenele de familie, unde fiecare ceașcă de cafea este pregătită cu dragoste și grijă. La Wanda, te așteptăm cu aromele intense ale cafelei proaspăt prăjite, deserturi delicioase făcute în casă și o atmosferă caldă și primitoare.</p>
-                <button class = "w-1/3 h-12 bg-orange-500 text-white rounded-md hover:rounded-lg">Descopera meniul nostru</button>
+                <button class = "md:w-1/3 h-12 bg-orange-500 text-white rounded-md hover:rounded-lg">Descopera meniul nostru</button>
 
-                <div class = "mt-20 border-t-2 border-red-200/30">Strada Doctor Panait Iatropol 29, București 050538</div>
+                <div class = "md:mt-20 border-t-2 border-red-200/30">Strada Doctor Panait Iatropol 29, București 050538</div>
 
             </div>
             <div class = "w-1/2 h-160  flex justify-end">
